@@ -213,7 +213,7 @@ def check_in(uid, pw):
 		ngew = [yy.text for yy in xnxx.find_all("option")]
 		print(" \033[1;96m[\033[1;97m!\033[1;96m]\033[1;97m tersedia "+str(len(ngew))+" opsi ")
 		for opt in range(len(ngew)):
-			print" "*3, str(opt+1)+"✓"+ngew[opt]
+			print" "*3, str(opt+1)+"."+ngew[opt]
 	elif "login_error" in str(run):
 		oh = run.find("div",{"id":"login_error"}).find("div").text
 		print(" \033[1;96m[\033[1;97m!\033[1;96m]\033[1;97m "+oh)
